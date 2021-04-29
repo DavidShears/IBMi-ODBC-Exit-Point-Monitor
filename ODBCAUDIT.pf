@@ -1,0 +1,25 @@
+      ********************************************************************
+      *                                                                   
+      *   File        :   ODBCAUDIT                                       
+      *   System      :   MNI Systems Utlities                            
+      *   Description :   Record of QIBM_QZDA_SQL calls                   
+      *   Author      :   David Shears                                    
+      *   Create Date :   March 2018                                      
+      *                                                                   
+      ********************************************************************
+      *Amendment Record                                                   
+      *Log No :  Date  :Description of change.                            
+      *-------------------------------------------------------------------
+      *       :20/03/18: Create as new object                             
+      ********************************************************************
+     A          R ODBCAUDR                                                
+      *                                                                   
+     A            OUSER         10A         COLHDG('Username')            
+     A            OFORM          8A         COLHDG('Format Name')         
+     A            OFUNC          4A         COLHDG('Function Code')      
+     A            ODATE           L         COLHDG('Date')          
+     A            OTIME           T         COLHDG('Time')          
+     A            OREQ        4098A         COLHDG('Request String')
+      *                                                             
+     A          K ODATE                                             
+     A          K OTIME                                             
